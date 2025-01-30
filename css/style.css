@@ -1,0 +1,203 @@
+
+:root{
+   --main-color:#d54215;
+   --primary-color: #e27652;
+   --black:#141414;
+   --white:#fff; 
+   --bg: #f2f2f2;
+   
+} /* temel erişim genel tanim yapip daha sonra buradan çekiyoruz. */
+
+*{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  text-transform: none;
+}
+
+html{
+  font-size: 62.5%; /*yazi boyutu */
+  scroll-behavior: smooth; /* şak diye değil kayarak gidiyor */
+ 
+}
+
+section{
+  padding: 3rem 9%; /*bosluk*/
+} 
+/* hakkimizda */
+
+.heading{
+  font-size: 4rem;  /*boyut*/
+  color: var(--main-color); /*head renkleri */
+  text-transform: uppercase;
+  text-align: center; /*ortalama*/
+}
+
+
+
+/* header */
+
+.header{  /* TEPESİ */
+  position: fixed;
+  top: 0; left: 0; right: 0; 
+  z-index: 1000;
+  display: flex; /* sağ ile ortama */
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: var(--main-color);
+}  
+
+.header .logo{
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: var(--white);
+} /* İZMİRLİ KİTAPSEVERLER */
+
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: var(--white);
+  padding-block: .8rem;
+  position: relative;
+}                                               /* Menununn sekliii */
+
+#menu{
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: none;  /* menüyü ortaladiim */
+}
+
+
+/* home */
+
+.home{
+  min-height: 110vh;
+  background: url(../images/atamsiyah.png.png) no-repeat;
+  background-size: cover;
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+}
+
+
+.home .content h3{  /*home yazilari* Atatürkkk*/
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: var(--white);
+  padding-bottom: 3.5rem;
+  margin-left: -100px;   
+}
+
+/* yazarim / hakkimizda */
+
+.author .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;  /*ortalama*/
+}
+
+.author .row .content{
+  flex: 1 1 40rem;  /* hakkimizdayı resimle yan yana */
+}
+
+.author .row .content h3{
+  font-size: 5rem;
+  color: var(--black);
+  text-transform: uppercase;  /* hakkimizda basligiiii*/
+}
+
+.author .row .content p{
+  font-size: 2rem;
+  color: var(--light-black);
+  padding: 2rem 0;
+  line-height: 2;  /* yazisiiiii*/
+}
+
+.author .row .image {
+  flex: 1 1 40rem; /* önemli */
+}
+
+.author .row .image img{
+  width: 100%; /* foto buyuklugu */
+}
+
+
+                                                            /*yazarlar ve eserlerin sablonu */
+.table .box-container {
+  display: flex;
+  flex-wrap: wrap;                                              /* İçerikler, bir satıra sığmazsa bir alt satıra geçer. */
+  justify-content: center;
+  gap: 20px;
+}
+
+.table .box {
+  display: flex;                                          /* Yatay hizalama için flexbox kullan */
+  align-items: center;                                      /* Resim ve yazıyı dikey olarak ortala */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;                                             /* köşe yuvarlama */
+  padding: 15px; 
+  width: 100%;
+  max-width: 600px;                                       /* Maksimum genişliği ayarla */
+
+} /*yeni */
+
+
+.table .box .line {
+  display: none; /* Eğer çizgi istemiyorsaM, gizlenir */
+}
+
+.table .box-container .box .desc{
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--light-black);
+  margin-left: 8rem;                            /*sol taraftan boşluk*/
+}                                                           /* ÖNEMLİ! */ 
+
+
+/* iletisim */ 
+.inside h1 {
+  font-size: 3.5rem;  
+  color: var(--main-color);  
+  text-align: center;  
+  margin-bottom: 2rem;  /* Başlık altı boşluk biraktim  */
+}
+
+
+.inside form label {
+  font-size: 2rem;   
+  color: var(--black);   
+
+}
+
+
+.inside form input, 
+.inside form textarea {
+  font-size: 1.8rem;    
+  width: 100%;  
+  border: 1px solid #ddd;  
+  margin-bottom: 1rem;                                     /* Alanlar  arasi bosluuk */
+}
+
+
+.inside form button {
+  font-size: 2rem;   
+  padding: 1rem 2rem;   
+  border-radius: 8px;   
+  background-color: var(--main-color);   
+  color: var(--white);  
+  cursor: pointer;  
+  border: none;   
+  transition: background-color 0.3s ease;  
+}
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");

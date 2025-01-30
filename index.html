@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İzmirli Kitapseverler</title>
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+    
+   
+
+    <header class="header">
+
+        <a href="#" class="logo">İZMİRLİ KİTAPSEVERLER</a>
+
+        <nav class="navbar">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#author">Hakkımızda</a>
+            <a href="#inside">İletişim</a>
+            <a href="#table">Yazarlar</a>
+            <a href="#eser">Eserler</a>
+            
+        </nav>
+    </header>
+
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Bir millet medeni hissiyatını<br>hakikaten ifade edebilecek<br> bir derecede edebiyatını,<br>müziğini ıslah edemezse, o milletin medeniyet sahasına<br> dahil olduğu kabul edilemez.</h3>
+            
+        </div>
+    </section>
+
+
+    <!-- author bolum -->
+
+    <section class="author" id="author">
+
+        <h1 class="heading"> Biz Kimiz? </h1>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Hakkımızda</h3>
+                <p>1999 yılında altı kitap kurdu arkadaşın bir araya gelmesiyle kurulan İzmirli Kitapseverler kulübü 25 yıldır geleneğini bozmadan her ay farklı konu başlıklarıyla edebiyat sevgisini yaşatmak için bir araya geliyor, eserler inceleyip tartışıyor.Bu ayki yazarlarımız ve kitapları,detaylar için kaydırmaya devam edin!</p>
+                <p>Tuna, Tiyatro Sk., 35600 Karşıyaka/İzmir</p>
+                <div id="countdown">
+
+                    
+                    <p>Bir sonraki etkinlik için geri sayım:</p>
+                    <p id="timer"></p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="images/ark.png" >
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- iletişim -->
+
+    <section class="inside" id="inside">
+
+        <h1 class="heading"></h1>
+        <h1>Bizimle İletişime Geçin</h1>
+        <form action="create_message.php" method="post">
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mesajınız:</label>
+        <textarea id="message" name="message" required></textarea><br>
+        <button type="submit">Gönder</button>
+    </form>
+
+    </section>
+
+    <!-- tablo yazarlar -->
+
+    <section class="table" id="table">
+
+        <h1 class="heading">YAZARLARIMIZ</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="images/leyla_erbil.png" 
+                width="150" height="150" loading="lazy">
+                <h3 class="chap"><a href="#eser">Leyla Erbil</a></h3>
+                <p class="desc">Eserlerinde orta sınıf ahlakını, bireyleşmeyi, bireyin iç dünyasındaki psikanalitik derinliği ve kadın-erkek ilişkilerini ele aldı.2002 yılında Nobel Edebiyat Ödülü'ne aday gösterilen Erbil, Türkiye'den bu ödüle aday gösterilen ilk kadın yazardır.</p>
+                <div class="line"></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/orhan.png" width="150" height="150" loading="lazy">
+                <h3 class="chap"><a href="#eser">Orhan Veli Kanık</a></h3>
+                <p class="desc">Orhan Veli Kanık, daha çok Orhan Veli olarak tanınan Türk şairdir. Melih Cevdet ve Oktay Rifat ile birlikte yenilikçi Garip akımının kurucusu olan Kanık, Türk şiirindeki eski yapıyı temelinden değiştirmeyi amaçlayarak sokaktaki adamın söyleyişini şiir diline taşıdı.</p>
+                <div class="line"></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/hasan.png" width="150" height="150" loading="lazy">
+                <h3 class="chap"><a href="#eser">Hasan Hüseyin Korkmazgil</a></h3>
+                <p class="desc">Hasan Hüseyin Korkmazgil, toplumcu-gerçekçi şiirin önde gelen temsilcilerinden biri olan Türk şairdir.</p>
+                <div class="line"></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/memduhs.png" 
+                width="150" height="150" 
+                loading="lazy">
+                <h3 class="chap"><a href="#eser">Memduh Şevket Esendal</a></h3>
+                <p class="desc">Yazar, diplomat ve siyasetçi. Türk edebiyatının tanınmış bir öykü yazarı olan Esendal, edebiyatçılığının yanı sıra siyasette de rol almıştır..</p>
+                <div class="line"></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/can.png" width="150" height="150" loading="lazy">
+                <h3 class="chap"><a href="#eser">Can Yücel</a></h3>
+                <p class="desc">Can Yücel, modern Türk şair ve çevirmendir. Kullandığı kaba ama samimi dil ve bariton sesiyle okuduğu şiirlerle Türk Edebiyatı'nda farklı bir tarz yaratmıştır. 7 yıl süreyle Millî Eğitim Bakanlığı yapan Hasan Âli Yücel'in oğludur.</p>
+                <div class="line"></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/atillla.png" width="150" height="150" loading="lazy">
+                <h3 class="chap"><a href="#eser">Atilla İlhan</a></h3>
+                <p class="desc">Attilâ İlhan, tam adıyla Attilâ Hamdi İlhan, Türk şair, romancı, düşünür, deneme yazarı, gazeteci, senarist ve eleştirmen. Entelektüel çalışmalarıyla Türk edebiyat ve düşünce dünyasına önemli katkıları olmuştur.</p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- // eserler-->
+    <section class="table" id="eser">
+
+      <h1 class="heading">ESERLERİMİZ</h1>
+
+      <div class="box-container">
+
+          <div class="box">
+              <img src="images/ejderha.png" 
+              width="200" height="200" loading="lazy" >
+              <h3 class="chap">Üç Başlı Ejderha </h3>
+            
+              <p class="desc">  “Leylâ Erbil acıyı, sevgiyi, inancı, ölümü ‘estetize’ etmekten kaçınır. Kişilerini trajik kahramanlara dönüştürmemeye özen gösterir. Onlar ‘Bizhalk’ın üyesidirler: Hatalı, yalancı, duyarsız, çıkarcı, zayıftırlar. Zaaflarını hoş görmez kişilerinin. Tam tersine onlara vurgu yapar. Erbil’de düzenin yandaşları gibi düzenin karşıtları da aynı acımasız ‘eleştirel bilinç’ önündedirler. Olumlu kişileri bile kurtulamaz eleştirilmekten.."</p>
+              
+              <div class="line"></div>
+          </div>
+
+          <div class="box">
+            <img src="images/butun.png" width="200" height="200" loading="lazy">
+              <h3 class="chap">Bütün Şiirleri </h3>
+     
+              <p class="desc">“Bir delikanlı Orhan’ın şiirlerini okumuşsa içi titremeden, gözü yaşarmadan insana, ağaca, kuşa, taşa, toprağa, Ankara’ya, İstanbul’a bakamaz, kaldırımına tüküremez, ağacını kesemez; sokakta kendi halinde, sakalı ağarmış, paltosu yırtık, üfürsen uçacak bir adamın –Süleyman Efendi budur diye– eline sarılmadan edemez olur.
+
+                Orhan’ın şiirlerini okuyan kız, erkek kimseyi öldüremez, kimseyi dövemez, kimseye sövemez.
+                
+                Türkçe Orhan’ın elinde bugüne kadar bilmediğimiz hale gelmişti. Biz Türkçemize neler, ne ukalâlıklar, ne yabancılıklar, ne paçavralar giydirmiştik. O Türkçeyi soyuvermiş, yakışır urbalar giydirmişti. Aman şu Türkçe ne güzel şeymiş, dedik.”
+                
+                Sait Faik Abasıyanık</p>
+              <div class="line"></div>
+          </div>
+
+          <div class="box">
+            <img src="images/kizilirmak.png" width="200" height="200" loading="lazy"   >
+              <h3 class="chap">Kızılırmak</h3>
+       
+              <p class="desc">şakıdı kuş
+
+                yarıldı nar
+                
+                delirdi ateş
+                
+                ve başladı uğul uğul uğuldamaya
+                
+                bütün ırmakları dünyanın
+                
+                kızılırmak
+                
+                kızılırmak
+                
+                *Silah ve şarkı *Sen ne cömert topraklarsın ey Ortadoğu *Ne bulmak içkilerde intiharlarda *Kırmızböceğini tanır mısınız? *Anasının karnını tekmelediğinde Temmuz *Benim karamsarlığım belki de bir demet gül-sevdiğim *Elbet bir bildiği var bu Haçaturyan’ın *Of ooofff, koca gürültülü devrimsiler yutturmacalar *Yorul ey gayrı *Benim karamsarlığım belki de bir demet gül-sevdiğim *Bir gün çıkıp geldiler *İncecik boyunlu kıraç karpuzu *Ay doğar bedir bedir *Silah ve şarkı *Bir oğlum olacak adı Temmuz *Köprüye varınca köprü yıkıldı</p>
+              <div class="line"></div>
+          </div>
+
+          <div class="box">
+            
+              <img src="images/otlakci.png" 
+              width="200" height="200" 
+              loading="lazy" alt="Motivation">
+              <h3 class="chap">Otlakçı</h3>
+             
+              <p class="desc">Çoğunlukla Meslek dergisinde yayımlanan ilk hikâyelerinden örneklerin toplandığı bu kitapta yazarın gerçekçi yönünü tüm etkisiyle görüyoruz. Memduh Şevket olup biteni alaycı tavrıyla kısa ve bol diyaloglu bir biçimde hikâyeleştirir. Ona yakıştırılan “gözlemci gerçekçi”lik, okuyanda “yazma sanatı”na karşı bir ilgi, istek uyandırır niteliktedir. En kaba, uslanmaz karakterlerine dahi olgun ve duyarlı yaklaşarak okurun sempati duymasını sağlamayı başarmıştır.</p>
+              <div class="line"></div>
+          </div>
+
+          <div class="box">
+              
+              <img src="images/feda.png" width="200" height="200" loading="lazy"  >
+              <h3 class="chap">Canfeda</h3>
+             
+
+              <p class="desc">Hayal oyunu /Ellerindi ellerimden tutan /Ellerimdi ellerinden tutan… /Bıraktığı anda ellerimiz ellerimizi /Gökyüzüne vuracaktı gölgeleri ellerimizin /Kimbilir kaç martılar halinde… /Bir masada karşı karşıya /Seyrederken dudaklarını senin, /Dile gelmiş ilk Türkçeydik… /Henüz başlamış külrengi bahar, /Ne savaş, ne barıştık biz… /Bu dünyaya yeni gelmiş bir diyar /Manolyaya gece konmuş kumrular…</p>
+              <div class="line"></div>
+          </div>
+
+          <div class="box">
+              <img src="images/Duvar.png" width="200" height="200" loading="lazy"  >
+              <h3 class="chap">Duvar</h3>
+         
+              <p class="desc">Duvar Attilâ İlhan’ın ilk şiir kitabı. Daha çok özgürlük, eşitlik ve mutluluk ideali üzerine yazılmış, toplumsal gerçekçi ilk şiirler… İlhan, “Duvar’daki şiirler, belki harbi etiyle kemiğiyle yaşamamış; ama gazete, radyo ve sinema yoluyla bir yandan; fırında kaybolan ekmek, seferber edilmiş ordu, pasif korunma ve karartmalar yoluyla öbür yandan; onun sertliğini ve hainliğini ‘etinde duymuş’ bir harp delikanlısının şiirleri” diyor, “sahillerimize asker cesetleri vuruyordu, barut ve yangın kokusunu alıyorduk…”</p>
+          </div>
+          
+        
+      </div>
+      </div>
+  </section>
+   <!-- js linki -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
